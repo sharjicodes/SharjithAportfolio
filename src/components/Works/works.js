@@ -11,21 +11,7 @@ const Works = () => {
   </p>
 
   {/* Project 1: EVENTX */}
-  <div className="projectContainer">
-    <h3>EVENTX – Event Management System</h3>
-    <p>
-      A MERN stack web app that enables event creation, user registration, and admin-level control.
-      Features include login authentication, event dashboards, and real-time updates.
-    </p>
-    <a
-      href="https://eventx-chi.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="projectLink"
-    >
-      View Project <FaArrowRight />
-    </a>
-  </div>
+  
 
   
 
@@ -63,6 +49,23 @@ const Works = () => {
     </a>
   </div>
 
+
+<div className="projectContainer">
+    <h3>EVENTX – Event Management System</h3>
+    <p>
+      A MERN stack web app that enables event creation, user registration, and admin-level control.
+      Features include login authentication, event dashboards, and real-time updates.
+    </p>
+    <a
+      href="https://eventx-chi.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="projectLink"
+    >
+      View Project <FaArrowRight />
+    </a>
+  </div>
+  
   {/* Project 2: StockScope */}
   <div className="projectContainer">
     <h3>StockScope – Buy/Sell Signal Generator</h3>
