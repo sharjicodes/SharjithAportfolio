@@ -23,7 +23,7 @@ const Works = () => {
       Includes Google OAuth login, automatic email parsing, and sends unsubscribe requests via HTTP or mailto.
     </p>
     <a
-      href="https://mega-unsubscribe.vercel.app"
+      href="https://megaunsubscribe.sharjith.com"
       target="_blank"
       rel="noopener noreferrer"
       className="projectLink"
