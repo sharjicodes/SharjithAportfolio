@@ -9,7 +9,7 @@ const Intro = () => {
         <h1>Hello, I'm <span className="introName">Sharjith A</span></h1>
         <h2>Full-Stack Developer</h2>
         <p className="introPara">
-          Final-year Computer Science & Engineering student skilled in MERN stack development.
+          Computer Science & Engineering graduate skilled in MERN stack development.
           Passionate about building dynamic applications and solving real-world problems through code.
         </p>
         <Link to="contact" smooth={true} duration={500}>
