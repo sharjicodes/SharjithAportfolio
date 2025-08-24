@@ -92,12 +92,12 @@ const Works = () => {
       Aranmula Mirrors and Tailmirror. Built to support regional artisans and elevate cultural experiences.
     </p>
     <a
-      href="https://github.com/sharjitha"
+      href="https://drive.google.com/file/d/1dr1dBr5gvl6RXxPLlqiAjAn3QXLOJ33p/view"
       target="_blank"
       rel="noopener noreferrer"
       className="projectLink"
     >
-      View Project <FaArrowRight />
+      View  <FaArrowRight />
     </a>
   </div>
 </section>
