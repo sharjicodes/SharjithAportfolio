@@ -47,13 +47,13 @@ const Contact = () => {
       </form>
 
       <div className="socialLinks">
-        <a href="https://github.com/sharjitha" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/sharjicodes" target="_blank" rel="noopener noreferrer">
           <img src={githubIcon} alt="GitHub" />
         </a>
         <a href="https://x.com/sharjithambadi?s=11" target="_blank" rel="noopener noreferrer">
           <img src={twitterIcon} alt="Twitter" />
         </a>
-        <a href="https://www.linkedin.com/in/sharjith-a-5a4145248/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/sharjicodes/" target="_blank" rel="noopener noreferrer">
           <img src={linkedinIcon} alt="LinkedIn" />
         </a>
       </div>
