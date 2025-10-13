@@ -66,6 +66,22 @@ const Works = () => {
     </a>
   </div>
   
+
+  <div className="projectContainer">
+    <h3>Moviezz – Movie Summmary Details</h3>
+    <p>
+      Built using React and Movietmdb API,Helpfull for extracting movies details and traillers based on various filters like rating,popularity and language .Used tailwindcss for clean and well maintained UI.
+    </p>
+    <a
+      href="https://moviezzzzzzzz.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="projectLink"
+    >
+      View Project <FaArrowRight />
+    </a>
+  </div>
+
   {/* Project 2: StockScope */}
   <div className="projectContainer">
     <h3>StockScope – Buy/Sell Signal Generator</h3>
