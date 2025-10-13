@@ -1,0 +1,51 @@
+#works {
+  padding: 4rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  color: #111111;
+}
+
+.worksTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.worksDesc {
+  font-size: 1rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projectContainer {
+  margin-bottom: 2.5rem;
+  border-left: 3px solid #0066cc;
+  padding-left: 1rem;
+}
+
+.projectContainer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.projectContainer p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #0066cc;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.projectLink:hover {
+  color: #000;
+}

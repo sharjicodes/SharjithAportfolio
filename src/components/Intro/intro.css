@@ -1,0 +1,38 @@
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #ffffff;
+  color: #111111;
+}
+
+.introContent {
+  max-width: 600px;
+}
+
+.introName {
+  color: #0066cc;
+}
+
+.introPara {
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
+  color: #333;
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}

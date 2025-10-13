@@ -1,0 +1,60 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Light theme body */
+body {
+  background-color: #ffffff;      /* Clean white background */
+  color: #111111;                 /* Deep black-gray text for better readability */
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 0 1rem;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: -0.25px;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs & spans */
+p, span {
+  color: #333333;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #000000;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #333333;
+}
