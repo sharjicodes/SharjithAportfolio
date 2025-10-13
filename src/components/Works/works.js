@@ -68,7 +68,7 @@ const Works = () => {
   
 
   <div className="projectContainer">
-    <h3>Moviezz – Movie "Detailed Summary"</h3>
+    <h3>Moviezz – Movie Detailed Summary</h3>
     <p>
       Built using React and Movietmdb API,Helpfull for extracting movies details and traillers based on various filters like rating,popularity and language .Used tailwindcss for clean and well maintained UI.
     </p>
