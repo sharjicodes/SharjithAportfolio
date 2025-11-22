@@ -7,7 +7,7 @@ import twitterIcon from '../../assets/twitter.png';
 import linkedinIcon from '../../assets/linkedin.png';
 import temetaIcon from '../../assets/TeMetaTech.jpeg';
 import ictIcon from '../../assets/ICT_Academy_Kerala.png';
-
+import appsIcon from '../../assets/AppsIcon.png';
 const Contact = () => {
   const form = useRef();
 
@@ -30,8 +30,10 @@ const Contact = () => {
         I’ve gained real-world experience through internships with:
       </p>
       <div className="internships">
+        <img src={appsIcon} alt="Apps Team" className="internIcon" />
         <img src={temetaIcon} alt="TeMetaTech" className="internIcon" />
         <img src={ictIcon} alt="ICT Academy" className="internIcon" />
+        
       </div>
 
       <h2 className="contactTitle">Contact Me</h2>
