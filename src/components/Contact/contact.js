@@ -1,5 +1,5 @@
 import './contact.css';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import githubIcon from '../../assets/github.png';
@@ -10,17 +10,34 @@ import ictIcon from '../../assets/ICT_Academy_Kerala.png';
 import appsIcon from '../../assets/AppsIcon.png';
 const Contact = () => {
   const form = useRef();
+  const [sending, setSending] = useState(false);
+  const [sendStatus, setSendStatus] = useState({ type: '', message: '' });
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_v07kger', 'template_pzq5zql', form.current, 'QFo9nBF16Tsel_NLT')
-      .then((result) => {
-        console.log(result.text);
-        e.target.reset();
-        alert('Email Sent!');
-      }, (error) => {
-        console.log(error.text);
+    if (sending) return;
+
+    setSending(true);
+    setSendStatus({ type: '', message: '' });
+
+    try {
+      await emailjs.sendForm('service_v07kger', 'template_pzq5zql', form.current, 'QFo9nBF16Tsel_NLT');
+      form.current.reset();
+      setSendStatus({ type: 'success', message: 'Thanks for reaching out. Your message was sent successfully.' });
+    } catch (error) {
+      const detail = error?.text || error?.message || 'EmailJS did not provide an error description.';
+      const statusCode = error?.status ? ` (error ${error.status})` : '';
+      console.error('EmailJS contact form error:', error);
+      const isGmailAuthorizationError = error?.status === 412 && /Gmail_API:\s*(Invalid grant|Request had insufficient authentication scopes)/i.test(detail);
+      setSendStatus({
+        type: 'error',
+        message: isGmailAuthorizationError
+          ? 'Your message could not be sent. EmailJS’s Gmail connection is missing permission to send email. Reconnect Gmail in EmailJS → Email Services → service_v07kger and approve “Send email on your behalf,” then test the service and try again.'
+          : `Your message could not be sent${statusCode}. ${detail} Check that the EmailJS service and template are active and that this site’s domain is allowed.`,
       });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -45,7 +62,12 @@ const Contact = () => {
         <input type="text" name="from_name" placeholder="Your Name" required />
         <input type="email" name="from_email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={sending}>{sending ? 'Sending…' : 'Send Message'}</button>
+        {sendStatus.message && (
+          <p className={`contactFormStatus ${sendStatus.type}`} role={sendStatus.type === 'error' ? 'alert' : 'status'}>
+            {sendStatus.message}
+          </p>
+        )}
       </form>
 
       <div className="socialLinks">

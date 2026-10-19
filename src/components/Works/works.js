@@ -10,6 +10,24 @@ const Works = () => {
     A showcase of full-stack and data-driven applications built during academic projects and internships.
   </p>
 
+  <div className="projectContainer">
+    <h3>Milo – Workday &amp; Team Companion</h3>
+    <p>
+      A cross-platform workday companion built with React Native, Expo, TypeScript, and Supabase.
+      Features offline-first attendance tracking with account sync, work and break timers, customizable
+      reminders with background web push, personal and group chat, WebRTC voice/video calls, and
+      multiplayer Ludo. An Electron desktop companion adds an animated assistant and work reminders.
+    </p>
+    <a
+      href="https://office-time-flame.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="projectLink"
+    >
+      View Project <FaArrowRight />
+    </a>
+  </div>
+
   {/* Project 1: EVENTX */}
   
 
