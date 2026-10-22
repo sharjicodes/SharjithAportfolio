@@ -50,7 +50,25 @@ const Works = () => {
     </a>
   </div>
 
-  {/* Project 5: Feedbackly – Anonymous Feedback Wall */}
+  {/* Project 5: ShipCheck – Website Accessibility Auditor */}
+  <div className="projectContainer">
+    <h3>ShipCheck – Website Accessibility Auditor</h3>
+    <p>
+      A full-stack tool that audits public webpages with Playwright and axe-core, then reports
+      accessibility findings with severity, affected elements, and remediation guidance.
+      Built with Next.js, TypeScript, Fastify, BullMQ, Redis, PostgreSQL, and Prisma.
+    </p>
+    <a
+      href="https://ship-check-bice.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="projectLink"
+    >
+      View Project <FaArrowRight />
+    </a>
+  </div>
+
+  {/* Project 6: Feedbackly – Anonymous Feedback Wall */}
   <div className="projectContainer">
     <h3>Feedbackly – Anonymous Feedback Wall</h3>
     <p>
